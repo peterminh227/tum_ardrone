@@ -1,3 +1,20 @@
+# Config orgininal package for ROS-Kinetic
+--> modify src/UINode/RosThread.h
+
+#ifndef Q_MOC_RUN
+#include "cvd/thread.h"
+#include "tum_ardrone/filter_state.h"
+#include "std_msgs/String.h"
+#include "geometry_msgs/Twist.h"
+#include "ardrone_autonomy/Navdata.h"
+#include "ros/ros.h"
+#include "sensor_msgs/Joy.h"
+#include "std_srvs/Empty.h"
+#include "std_msgs/Empty.h"
+#endif
+# The code is error with GCC+6, 7 --> Change the primary gcc by using alternatives
+sudo update-alternatives --config gcc 
+>> choose gcc+5
 # Package tum_ardrone
 
 This package contains the implementation corresponding to the following publications:
