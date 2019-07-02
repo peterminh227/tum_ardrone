@@ -1,11 +1,13 @@
 ## Config orgininal package for ROS-Kinetic
 --> modify src/UINode/RosThread.h
-'''
+``` bash
 #ifndef Q_MOC_RUN,
 #endif
-'''
+```
 # The code is error with GCC+6, 7 --> Change the primary gcc by using alternatives
-sudo update-alternatives --config gcc 
+``` bash
+sudo update-alternatives --config gcc
+```
 >> choose gcc+5
 # Package tum_ardrone
 
