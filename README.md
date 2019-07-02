@@ -1,8 +1,9 @@
 ## Config orgininal package for ROS-Kinetic
 --> modify src/UINode/RosThread.h
-
+'''
 #ifndef Q_MOC_RUN,
 #endif
+'''
 # The code is error with GCC+6, 7 --> Change the primary gcc by using alternatives
 sudo update-alternatives --config gcc 
 >> choose gcc+5
